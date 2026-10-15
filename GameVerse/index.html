@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse | Premium PC Gaming</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <div class="container nav-wrap">
+                <a href="index.html" class="brand-mark" aria-label="GameVerse home">
+                    <span class="brand-icon">G</span>
+                    <span class="brand-text">GameVerse</span>
+                </a>
+
+                <nav class="main-nav" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Catalog</a></li>
+                        <li><a href="index.html#discover" class="active">Discover</a></li>
+                        <li><a href="#deals">Deals</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nav-search-wrap">
+                    <span class="search-icon small">⌕</span>
+                    <input id="nav-search-input" type="search" placeholder="Search games..." aria-label="Search games">
+                </div>
+
+                <div class="nav-tools" aria-label="User tools">
+                    <button type="button" class="nav-tool" aria-label="Profile">👤</button>
+                    <button type="button" class="nav-tool" aria-label="Wishlist">♡</button>
+                    <a href="cart.html" class="cart-pill" aria-label="Shopping cart">
+                        <span class="cart-icon">🛒</span>
+                        <span>Cart</span>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-section" id="discover">
+                <div class="hero-backdrop" aria-hidden="true"></div>
+                <div class="container hero-layout">
+                    <div class="hero-copy">
+                        <span class="eyebrow">DISCOVER</span>
+                        <h1>PREMIUM PC GAMES</h1>
+                        <p>Explore, find, and play the best games in the world.</p>
+
+                        <div class="hero-actions">
+                            <a href="products.html" class="btn btn-primary">Browse Catalog</a>
+                        </div>
+
+                        <div class="hero-meta" id="hero-stats" aria-live="polite"></div>
+                    </div>
+
+                    <div class="hero-visual" aria-label="Featured game artwork">
+                        <div class="feature-frame">
+                            <div class="feature-art">
+                                <div class="feature-overlay">
+                                    <span class="hud-tag">CURATED</span>
+                                    <h2>NEON LEGENDS</h2>
+                                    <p>Epic fantasy. Futuristic warfare. Pure performance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container section-block" id="categories">
+                <div class="discover-categories" aria-label="Game categories"></div>
+            </section>
+
+            <section class="container section-block" id="trending">
+                <div id="featured-games" class="games-grid"></div>
+            </section>
+
+            <section class="container section-block" id="deals">
+                <div class="section-head">
+                    <div>
+                        <span class="section-kicker">LIMITED OFFERS</span>
+                        <h2>Best Deals</h2>
+                    </div>
+                </div>
+                <div class="deal-grid">
+                    <article class="deal-card deal-featured">
+                        <span class="deal-tag">ON SALE</span>
+                        <h3>Cyberpunk 2077</h3>
+                        <p>Save 30% on this futuristic action RPG.</p>
+                        <strong>-30% OFF</strong>
+                    </article>
+                    <article class="deal-card">
+                        <span class="deal-tag">NEW RELEASE</span>
+                        <h3>Black Myth: Wukong</h3>
+                        <p>Epic mythic combat with premium visuals.</p>
+                        <strong>-18% OFF</strong>
+                    </article>
+                    <article class="deal-card">
+                        <span class="deal-tag">BUNDLE</span>
+                        <h3>Weekend Bundle</h3>
+                        <p>Build your library with 3 premium picks.</p>
+                        <strong>BUY 2 GET 1</strong>
+                    </article>
+                </div>
+            </section>
+
+            <section id="about" class="container section-block showcase-panel" aria-label="About GameVerse">
+                <div class="showcase-header">
+                    <div>
+                        <span class="section-kicker">PLAYER FAVORITES</span>
+                        <h2>Built for competitive players and story seekers</h2>
+                    </div>
+                    <a href="products.html" class="text-link">Explore all games</a>
+                </div>
+
+                <div class="showcase-grid">
+                    <article class="showcase-card showcase-primary">
+                        <span class="showcase-badge">NEW DROP</span>
+                        <h3>Legendary Worlds</h3>
+                        <p>From massive RPG campaigns to competitive PvP clashes, discover immersive experiences tuned for high-performance PC gaming.</p>
+                        <a href="products.html" class="link-btn">Browse the vault</a>
+                    </article>
+
+                    <article class="showcase-card">
+                        <span class="showcase-badge">ULTRA SETTINGS</span>
+                        <h3>4K READY</h3>
+                        <p>Optimize your rig with premium titles crafted for stunning visuals, smooth frame times, and next-level realism.</p>
+                    </article>
+
+                    <article class="showcase-card">
+                        <span class="showcase-badge">COMMUNITY</span>
+                        <h3>Live Multiplayer</h3>
+                        <p>Jump into dynamic co-op sessions and fierce online battlegrounds with highly rated experiences built to play together.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div>
+                    <a href="index.html" class="brand-mark footer-brand">
+                        <span class="brand-icon">G</span>
+                        <span class="brand-text">GameVerse</span>
+                    </a>
+                    <p>Premium PC adventures for players who crave next-level worlds.</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Catalog</a>
+                    <a href="#discover">Discover</a>
+                    <a href="#deals">Deals</a>
+                    <a href="#about">About</a>
+                </div>
+
+                <div class="socials" aria-label="Social media">
+                    <a href="#" aria-label="Discord">Discord</a>
+                    <a href="#" aria-label="X">X</a>
+                    <a href="#" aria-label="YouTube">YouTube</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="data/games.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

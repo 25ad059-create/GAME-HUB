@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse - Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand-mark" aria-label="GameVerse home">
+                <span class="brand-icon">G</span>
+                <span class="brand-text">GameVerse</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Discover</a></li>
+                    <li><a href="products.html">All Games</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="checkout.html" class="active">Checkout</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="cart.html" class="cart-pill" aria-label="Shopping cart">
+                    <span class="cart-icon">🛒</span>
+                    <span>Cart</span>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container section-block checkout-page">
+            <section class="page-header">
+                <span class="section-kicker">FINALIZE ORDER</span>
+                <h1>Checkout</h1>
+            </section>
+
+            <div class="checkout-layout">
+                <section class="panel-surface checkout-form-wrap">
+                    <form id="checkout-form" novalidate>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input id="fullName" name="fullName" type="text" placeholder="Jane Gamer">
+                            <div class="form-error" data-error="fullName"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="jane@example.com">
+                            <div class="form-error" data-error="email"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Shipping Address</label>
+                            <textarea id="address" name="address" placeholder="123 Pixel Lane"></textarea>
+                            <div class="form-error" data-error="address"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input id="city" name="city" type="text" placeholder="New York">
+                            <div class="form-error" data-error="city"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                                <option value="">Select country</option>
+                                <option value="USA">USA</option>
+                                <option value="Canada">Canada</option>
+                                <option value="UK">UK</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Australia">Australia</option>
+                            </select>
+                            <div class="form-error" data-error="country"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="zip">ZIP / Postal Code</label>
+                            <input id="zip" name="zip" type="text" placeholder="10001">
+                            <div class="form-error" data-error="zip"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="card">Credit Card Number</label>
+                            <input id="card" name="card" type="text" placeholder="1234 5678 9012 3456">
+                            <div class="form-error" data-error="card"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary login-btn">Place Order</button>
+                    </form>
+
+                    <div id="checkout-success" class="success-box" aria-live="polite"></div>
+                </section>
+
+                <aside id="checkout-summary" class="cart-summary panel-surface"></aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <a href="index.html" class="brand-mark footer-brand">
+                    <span class="brand-icon">G</span>
+                    <span class="brand-text">GameVerse</span>
+                </a>
+                <p>Premium PC adventures for players who crave next-level worlds.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">All Games</a>
+                <a href="cart.html">Cart</a>
+                <a href="checkout.html">Checkout</a>
+                <a href="login.html">Login</a>
+            </div>
+
+            <div class="socials" aria-label="Social media">
+                <a href="#">Discord</a>
+                <a href="#">X</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data/games.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

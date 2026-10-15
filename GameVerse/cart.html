@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse - Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand-mark" aria-label="GameVerse home">
+                <span class="brand-icon">G</span>
+                <span class="brand-text">GameVerse</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Discover</a></li>
+                    <li><a href="products.html">All Games</a></li>
+                    <li><a href="cart.html" class="active">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="cart.html" class="cart-pill" aria-label="Shopping cart">
+                    <span class="cart-icon">🛒</span>
+                    <span>Cart</span>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container section-block cart-page">
+            <section class="page-header">
+                <span class="section-kicker">YOUR LOADOUT</span>
+                <h1>Shopping Cart</h1>
+            </section>
+
+            <div class="cart-layout">
+                <section id="cart-items" class="panel-surface"></section>
+                <aside id="cart-summary" class="cart-summary panel-surface"></aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <a href="index.html" class="brand-mark footer-brand">
+                    <span class="brand-icon">G</span>
+                    <span class="brand-text">GameVerse</span>
+                </a>
+                <p>Premium PC adventures for players who crave next-level worlds.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">All Games</a>
+                <a href="cart.html">Cart</a>
+                <a href="checkout.html">Checkout</a>
+                <a href="login.html">Login</a>
+            </div>
+
+            <div class="socials" aria-label="Social media">
+                <a href="#">Discord</a>
+                <a href="#">X</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data/games.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

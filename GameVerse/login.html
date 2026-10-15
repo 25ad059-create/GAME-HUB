@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page-body">
+    <div class="login-bg" aria-hidden="true"></div>
+
+    <header class="site-header login-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand-mark" aria-label="GameVerse home">
+                <span class="brand-icon">G</span>
+                <span class="brand-text">GameVerse</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">All Games</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="login.html" class="active">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="login-shell">
+        <div class="login-card">
+            <div class="login-visual">
+                <div class="login-visual-inner">
+                    <span class="hud-tag">PLAYER LOGIN</span>
+                    <h2>ENTER THE ARENA</h2>
+                    <p>Access your profile, wishlist, and premium drops.</p>
+                </div>
+            </div>
+
+            <div class="login-panel">
+                <div class="login-brand">
+                    <span class="brand-icon">G</span>
+                    <span class="brand-text">GameVerse</span>
+                </div>
+
+                <h1>Welcome back</h1>
+                <p class="subtitle">Sign in to continue your next campaign.</p>
+
+                <form id="login-form" novalidate>
+                    <div class="form-group">
+                        <label for="login-email">Email or Username</label>
+                        <input id="login-email" name="loginEmail" type="text" placeholder="gamer@example.com or gamer123">
+                        <div class="form-error" data-error="loginEmail"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <div class="password-wrap">
+                            <input id="login-password" name="loginPassword" type="password" placeholder="Enter your password">
+                            <button type="button" class="password-toggle" id="toggle-password" aria-label="Show password">Show</button>
+                        </div>
+                        <div class="form-error" data-error="loginPassword"></div>
+                    </div>
+
+                    <div class="inline-row">
+                        <label class="checkbox-row">
+                            <input type="checkbox" name="rememberMe">
+                            <span>Remember Me</span>
+                        </label>
+                        <a href="index.html" class="text-link">Back to Store</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary login-btn">Login</button>
+                    <p class="form-note">Demo only: this login does not store or validate real passwords.</p>
+                </form>
+
+                <div class="login-success" id="login-success" aria-live="polite"></div>
+
+                <p class="signup-note">
+                    Need an account? <a href="index.html" class="text-link">Create account</a>
+                    <span class="form-note">(Registration is not implemented in this demo.)</span>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

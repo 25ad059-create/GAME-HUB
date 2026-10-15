@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse - Trailer Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/trailers.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand-mark" aria-label="GameVerse home">
+                <span class="brand-icon">G</span>
+                <span class="brand-text">GameVerse</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Discover</a></li>
+                    <li><a href="products.html">All Games</a></li>
+                    <li><a href="trailers.html" class="active">Trailers</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="cart.html" class="cart-pill" aria-label="Shopping cart">
+                    <span class="cart-icon">🛒</span>
+                    <span>Cart</span>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="trailer-page-shell">
+        <div class="container section-block">
+            <section class="page-header trailer-header">
+                <span class="section-kicker">CINEMATIC HIGHLIGHTS</span>
+                <h1>Game Trailers</h1>
+                <p>Every title below has a dedicated artwork cover and its own matching official gameplay trailer.</p>
+            </section>
+
+            <section class="trailer-layout" aria-label="Game trailer showcase">
+                <aside class="trailer-gallery-panel">
+                    <div class="trailer-controls">
+                        <input id="trailer-search" type="search" placeholder="Search titles or genres" aria-label="Search trailers">
+                        <button id="clear-search" class="btn-secondary">Clear</button>
+
+                        <fieldset class="filter-row" aria-label="Category filters">
+                            <legend class="sr-only">Categories</legend>
+                            <label><input type="checkbox" value="Action" checked> Action</label>
+                            <label><input type="checkbox" value="Adventure" checked> Adventure</label>
+                            <label><input type="checkbox" value="Racing" checked> Racing</label>
+                            <label><input type="checkbox" value="RPG" checked> RPG</label>
+                            <label><input type="checkbox" value="Horror" checked> Horror</label>
+                            <label><input type="checkbox" value="Survival" checked> Survival</label>
+                            <label><input type="checkbox" value="Multiplayer" checked> Multiplayer</label>
+                        </fieldset>
+                    </div>
+
+                    <div id="trailer-grid" class="trailer-grid" aria-live="polite"></div>
+                </aside>
+
+                <div class="trailer-player-panel">
+                    <div class="player-meta">
+                        <span class="player-label">Now playing</span>
+                        <h2 id="active-title">Cyberpunk 2077</h2>
+                        <span id="active-genre" class="genre-badge">RPG</span>
+                    </div>
+
+                    <div class="video-shell" aria-live="polite">
+                        <iframe
+                            id="trailer-iframe"
+                            title="Selected game trailer"
+                            src=""
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+
+                        <div id="trailer-fallback" class="trailer-fallback hidden" role="alert">
+                            <p>This trailer is temporarily unavailable.</p>
+                            <a id="youtube-link" href="#" target="_blank" rel="noreferrer">Open on YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <a href="index.html" class="brand-mark footer-brand">
+                    <span class="brand-icon">G</span>
+                    <span class="brand-text">GameVerse</span>
+                </a>
+                <p>Premium PC adventures for players who crave next-level worlds.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">All Games</a>
+                <a href="trailers.html">Trailers</a>
+                <a href="cart.html">Cart</a>
+                <a href="checkout.html">Checkout</a>
+                <a href="login.html">Login</a>
+            </div>
+
+            <div class="socials" aria-label="Social media">
+                <a href="#">Discord</a>
+                <a href="#">X</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data/trailers.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/trailers.js"></script>
+</body>
+</html>

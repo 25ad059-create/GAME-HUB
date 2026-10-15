@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse - All Games</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand-mark" aria-label="GameVerse home">
+                <span class="brand-icon">G</span>
+                <span class="brand-text">GameVerse</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Discover</a></li>
+                    <li><a href="products.html" class="active">All Games</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#deals">Deals</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="cart.html" class="cart-pill" aria-label="Shopping cart">
+                    <span class="cart-icon">🛒</span>
+                    <span>Cart</span>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container section-block catalog-page">
+            <section class="page-header">
+                <span class="section-kicker">GAME VAULT</span>
+                <h1>All Games</h1>
+                <p>Explore elite PC experiences built for performance, immersion, and unreal replay value.</p>
+            </section>
+
+            <section class="catalog-controls panel-surface">
+                <div class="search-shell catalog-search">
+                    <span class="search-icon">⌕</span>
+                    <input id="search-input" type="search" placeholder="Search games, genres, worlds..." aria-label="Search games">
+                    <button id="clear-search" type="button" class="clear-search">Clear</button>
+                </div>
+
+                <div>
+                    <label for="genre-filter">Genre</label>
+                    <select id="genre-filter">
+                        <option value="all">All Genres</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="sort-select">Sort by</label>
+                    <select id="sort-select">
+                        <option value="featured">Featured</option>
+                        <option value="name-asc">Name: A-Z</option>
+                        <option value="name-desc">Name: Z-A</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Rating</option>
+                    </select>
+                </div>
+            </section>
+
+            <section id="catalog-grid" class="games-grid"></section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <a href="index.html" class="brand-mark footer-brand">
+                    <span class="brand-icon">G</span>
+                    <span class="brand-text">GameVerse</span>
+                </a>
+                <p>Premium PC adventures for players who crave next-level worlds.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">All Games</a>
+                <a href="cart.html">Cart</a>
+                <a href="checkout.html">Checkout</a>
+                <a href="login.html">Login</a>
+            </div>
+
+            <div class="socials" aria-label="Social media">
+                <a href="#">Discord</a>
+                <a href="#">X</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data/games.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>
